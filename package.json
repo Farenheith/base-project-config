@@ -2,13 +2,12 @@
   "name": "base-project-config",
   "version": "1.0.0",
   "description": "A project with basic configuration for reusing in another ones",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Farenheith",
   "license": "MIT",
   "dependencies": {
-    "to-exports": "^0.1.0"
+    "gts": "^1.1.2"
   }
 }
