@@ -1,0 +1,10 @@
+{
+  "name": "base-project-config",
+  "version": "1.0.0",
+  "description": "A project with basic configuration for reusing in another ones",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Farenheith",
+  "license": "MIT"
+}
