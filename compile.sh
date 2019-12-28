@@ -1,1 +1,1 @@
-tsc -p ./node_modules/base-config-project/tsconfig.json
+tsc -p ./node_modules/base-project-config/tsconfig.json
