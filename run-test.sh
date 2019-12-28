@@ -1,1 +1,2 @@
-mocha --opts base-project-config/mocha.opts
+BASEDIR=$PWD/mocha.opts
+mocha --opts $BASEDIR
