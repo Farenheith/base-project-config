@@ -1,1 +1,1 @@
-run-lint.sh && run-compile.sh
+run-lint && run-compile
