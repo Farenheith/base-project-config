@@ -9,16 +9,22 @@
     "pospush": "git push"
   },
   "bin": {
-    "run-test": "./bin/run-test.sh",
-    "run-compile": "./bin/run-compile.sh",
     "run-lint": "./bin/run-lint.sh",
-    "run-build": "./bin/run-build.sh"
+    "run-test": "./bin/run-test.sh",
+    "run-test-coverage": "./bin/run-test-coverage.sh",
+    "run-test-lcov": "./bin/run-test-coverage.sh",
+    "run-build-dev": "./bin/run-build-dev.sh",
+    "run-build": "./bin/run-build.sh",
+    "add-scripts": "./bin/add-scripts.sh"
   },
   "author": "Farenheith",
   "license": "MIT",
   "dependencies": {
     "@types/node": "^13.1.1",
     "gts": "^1.1.2",
+    "npm-add-script": "^1.1.0",
+    "nyc": "^15.0.0",
+    "ts-node": "^8.5.4",
     "typescript": "^3.7.4"
   }
 }
