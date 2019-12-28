@@ -1,6 +1,5 @@
-import * as sinon from 'sinon';
+const sinon = require('sinon');
 import { afterEach } from 'mocha';
-import * as fs from 'fs';
 
 afterEach(() => {
 	sinon.restore();
