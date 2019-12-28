@@ -1,1 +1,1 @@
-run-lint && run-compile
+npm run lint && npm run build-dev
