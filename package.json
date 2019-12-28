@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "A project with basic configuration for reusing in another ones",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepush": "git add . ",
+    "push": "git commit -m $1",
+    "pospush": "git push"
   },
   "bin": {
     "run-test": "./run-test.sh",
