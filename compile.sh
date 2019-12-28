@@ -1,1 +1,1 @@
-tsc -p base-config-project/tsconfig.opts
+tsc -p ./node_modules/base-config-project/tsconfig.opts
