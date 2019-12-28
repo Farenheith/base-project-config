@@ -10,8 +10,9 @@
   },
   "bin": {
     "run-test": "./bin/run-test.sh",
-    "compile": "./bin/compile.sh",
-    "run-lint": "./bin/run-lint.sh"
+    "run-compile": "./bin/run-compile.sh",
+    "run-lint": "./bin/run-lint.sh",
+    "run-build": "./bin/run-build.sh"
   },
   "author": "Farenheith",
   "license": "MIT",
