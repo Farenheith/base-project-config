@@ -20,6 +20,7 @@
   "author": "Farenheith",
   "license": "MIT",
   "dependencies": {
+    "@types/mocha": "^5.2.7",
     "@types/node": "^13.1.1",
     "gts": "^1.1.2",
     "npm-add-script": "^1.1.0",
