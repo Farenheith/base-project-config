@@ -1,7 +1,7 @@
 {
     "extends": "../gts/tsconfig-google.json",
     "compilerOptions": {
-      "outDir": "build",
+      "outDir": "../../build",
       "lib": [
         "es2017",
         "dom",
@@ -11,10 +11,6 @@
       "emitDecoratorMetadata": true,
       "noImplicitAny": false,
       "types": ["node", "mocha", "chai"]
-    },
-    "include": [
-      "src/*.ts",
-      "src/**/*.ts"
-    ]
+    }
   }
   
