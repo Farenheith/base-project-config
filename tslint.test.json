@@ -3,6 +3,7 @@
     "rules": {
         "interface-name": false,
         "no-any": false,
-        "ban": false
+        "ban": false,
+        "no-unused-expressions": false
     }
 }
