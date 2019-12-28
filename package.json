@@ -7,8 +7,7 @@
   },
   "bin": {
     "run-test": "./run-test.sh",
-    "compile": "./compile.sh",
-    ""
+    "compile": "./compile.sh"
   },
   "author": "Farenheith",
   "license": "MIT",
