@@ -13,7 +13,7 @@ This is ideal for project with this characteristics:
 * using nyc for validating coverage;
 * using tslint to ensure sintax;
 
-Look that, if all of this is a must have for you, installing base-project-config will put all this packages automatically in your project with a default recommended configuration, making the creating of new project much easier
+Look that, if all of this is a must have for you, installing base-project-config will put all this packages automatically in your project with a default recommended configuration, making the creating of new project much easier.
 
 ## How to install it?
 
@@ -25,22 +25,26 @@ npm install --save-dev base-project-config
 
 This command will:
 * add all scripts supported by this package to your package.json
-* create all configuration files
+* create required configuration files
 
 ```batch
 npx setup-project
 ```
-
-## How to just create the config files?
+## How to just create required the config files?
 
 This command will:
 * create .editorconfig
+* create tslint.json
+* create test/tslint.json
+
+## How to create all the config files?
+
+You don't need to do it, as all the default config files can be getted from the package by the npm-scripts, but if you want to customize something, this command will:
+* create all the required config files
 * create tsconfig.json
 * create tsconfig.test.json
 * create tsconfig.test.json
 * create .nycrc.json
-* create tslint.json
-* create test/tslint.json
 
 ```batch
 npx create-configs
