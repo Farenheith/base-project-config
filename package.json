@@ -6,7 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "run-test": "./run-test.sh"
+    "run-test": "./run-test.sh",
+    "compile": "./compile.sh",
+    ""
   },
   "author": "Farenheith",
   "license": "MIT",

@@ -1,2 +1,1 @@
-BASEDIR=$(dirname "$0")/mocha.opts
-mocha --opts $BASEDIR
+mocha --opts base-project-config/mocha.opts
