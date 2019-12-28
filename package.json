@@ -15,6 +15,7 @@
   "author": "Farenheith",
   "license": "MIT",
   "dependencies": {
-    "gts": "^1.1.2"
+    "gts": "^1.1.2",
+    "typescript": "^3.7.4"
   }
 }
