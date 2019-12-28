@@ -17,6 +17,7 @@
   "dependencies": {
     "@types/node": "^13.1.1",
     "gts": "^1.1.2",
+    "sinon-chai-calls-assertion": "^1.3.0",
     "typescript": "^3.7.4"
   }
 }
