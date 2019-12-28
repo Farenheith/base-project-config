@@ -1,3 +1,3 @@
 [ -f .nycrc.json ] && [ -f .nycrc ] && [ -f .nycrc.yaml ] && [ -f .nycrc.yml ] && [ -f nyc.config.js ] && \
-    nyc run-test $1 || \
-    nyc --nycrc-path=./node_modules/base-project-config/.nycrc.json run-test $1
+    nyc npm test || \
+    nyc --nycrc-path=./node_modules/base-project-config/.nycrc.json npm test
