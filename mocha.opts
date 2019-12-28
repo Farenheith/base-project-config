@@ -1,4 +1,5 @@
 # mocha.opts
     --require ./node_modules/base-project-config/ts-node-register.js
-    ./test/setup.spec.ts
+    ./node_modules/base-project-config/setup.spec.ts
+    $1
     --recursive ./test/**/*.spec.ts
