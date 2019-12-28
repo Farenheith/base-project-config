@@ -1,6 +1,6 @@
-# sinon-chai-calls-assertion
+# base-project-config
 
-A simple assertion to validate many aspects of stub calls. It is supposed to use with sinon + chai.
+A project with basic configuration for reusing in another ones
 
 ## How it works
 
