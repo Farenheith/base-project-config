@@ -9,8 +9,9 @@
     "pospush": "git push"
   },
   "bin": {
-    "run-test": "./run-test.sh",
-    "compile": "./compile.sh"
+    "run-test": "./bin/run-test.sh",
+    "compile": "./bin/compile.sh",
+    "run-lint": "./bin/run-lint.sh"
   },
   "author": "Farenheith",
   "license": "MIT",
