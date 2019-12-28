@@ -4,6 +4,6 @@
         "interface-name": false,
         "no-any": false,
         "ban": false,
-        "no-unused-expressions": false
+        "no-unused-expression": false
     }
 }
