@@ -5,13 +5,14 @@ A project with basic configuration for reusing in another ones.
 ## How it works
 
 All common needed packages are loaded with this project by dependency, and there is pre-configured npm-scripts so you don't need to write it all by yourself.
-This is ideal for project with these characteristics:
+This is ideal for projects with these characteristics:
 
 * Using typescript language;
 * Using mocha, sinon, chai triad;
 * Using editorconfig extensions for vscode;
 * Using nyc for coverage;
 * Using tslint to ensure sintax;
+* Compiled source code will be outputed at build folder;
 
 Look that, if all of this is a must have for you, installing base-project-config will put all this packages automatically in your project with a default recommended configuration, making the creation of a new project much easier.
 
@@ -40,7 +41,7 @@ This command will:
 ```batch
 npx setup-project
 ```
-## How to just create required the config files?
+## How to just create the required config files?
 
 This command will:
 * Create .editorconfig
@@ -49,20 +50,20 @@ This command will:
 * Create src folder if it doesn't exist;
 * Create test/tslint.json
 
-## How to create all the config files?
+## How to create all config files?
 
 You don't need to do it, as all the default config files can be getted from the package by the npm-scripts, but if you want to customize something, this command will:
 * Create all the required config files
 * Create tsconfig.json
 * Create tsconfig.test.json
-* Create tsconfig.test.json
 * Create .nycrc.json
+* Create test/mocha.opts
 
 ```batch
 npx create-configs
 ```
 
-## How to just create add all scripts?
+## How to just add all scripts?
 
 This command will:
 * Add lint script, that runs tslint against your project;
@@ -70,7 +71,7 @@ This command will:
 * Add build script, that runs lint and build:dev;
 * Add test script, that runs mocha against your project;
 * Add test:coverage script, that runs nyc and mocha against your project;
-* Add test:coverage:lcovonly script, that runs lint, nyc generating only lcov report and mocha agains your project (useful for pipelines);
+* Add test:coverage:lcovonly script, that runs lint, nyc generating only lcov report and mocha against your project (useful for pipelines);
 
 ```batch
 npx add-scripts
@@ -87,4 +88,4 @@ Additionaly to test script, if you want to add some setup file before your tests
 "test": "run-test my-setup-test.ts",
 ```
 
-This is useful if you want to use a lib, like sinon-chai, and want to setup it to all your test once
+This is useful if you want to use a lib, like sinon-chai, and want to setup it to all your test just in one place.

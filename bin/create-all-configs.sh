@@ -1,3 +1,4 @@
+create-configs
 printf "{
     \"extends\": \"base-project-config/.nycrc.json\"
 }
@@ -10,4 +11,4 @@ printf "{
     \"extends\": \"base-project-config/tsconfig.test.json\"
 }
 " > tsconfig.test.json
-create-configs
+cp -f ./node_modules/base-project-config/mocha.opts ./test/mocha.opts
