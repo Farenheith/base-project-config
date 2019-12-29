@@ -29,6 +29,7 @@ So, the rules are:
 * Source code must be in **src** folder;
 * Unit tests must be in **test** folder;
 * 95% coverage is the minimum expected;
+* The main code must be **src/index.ts**;
 
 There is also tslint and tsconfig setup that you can check it out in those files that your project will be enforced to follow, but any configuration you must let different you can, just following the correspondent instructions bellow.
 
