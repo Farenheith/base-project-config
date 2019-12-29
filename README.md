@@ -4,7 +4,7 @@ A project with basic configuration for reusing in another ones.
 
 ## How it works
 
-All common needed packages are loaded with this project by dependency, and there is pre-configures npm-scripts so you don't need to write it all by yourself.
+All common needed packages are loaded with this project by dependency, and there is pre-configured npm-scripts so you don't need to write it all by yourself.
 This is ideal for project with this characteristics:
 
 * using typescript language;
