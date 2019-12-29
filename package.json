@@ -15,6 +15,7 @@
   "bin": {
     "run-lint": "bin/run-lint.sh",
     "run-test": "bin/run-test.sh",
+    "run-test-debug": "bin/run-test-debug.sh",
     "run-test-coverage": "bin/run-test-coverage.sh",
     "run-test-lcov": "bin/run-test-coverage.sh",
     "run-build-dev": "bin/run-build-dev.sh",
