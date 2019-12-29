@@ -9,17 +9,27 @@ This is ideal for project with this characteristics:
 
 * using typescript language;
 * using mocha, sinon, chai triad;
-* using editorconfig extendions for vscode;
-* using nyc for validating coverage;
+* using editorconfig extensions for vscode;
+* using nyc for coverage;
 * using tslint to ensure sintax;
 
-Look that, if all of this is a must have for you, installing base-project-config will put all this packages automatically in your project with a default recommended configuration, making the creating of new project much easier.
+Look that, if all of this is a must have for you, installing base-project-config will put all this packages automatically in your project with a default recommended configuration, making the creation of a new project much easier.
 
 ## How to install it?
 
 ```batch
 npm install --save-dev base-project-config
 ```
+
+## How is expected for my project to be organized?
+
+For default configuration, first, you need to run *npx setup-project*, so all the basic files and directories are prepared.
+So, the rules are:
+    * source code must be in **src** folder;
+    * unit tests must be in **test** folder;
+    * 95% coverage is the minimum expected;
+
+There is also tslint and tsconfig setup that you can check it out in those files that your project will be enforced to follow, but any configuration you must let different you can, just following the correspondent instructions bellow.
 
 ## How to setup project
 
@@ -35,6 +45,8 @@ npx setup-project
 This command will:
 * create .editorconfig
 * create tslint.json
+* create test folder if it doesn't exist;
+* create test folder if it doesn't exist;
 * create test/tslint.json
 
 ## How to create all the config files?
