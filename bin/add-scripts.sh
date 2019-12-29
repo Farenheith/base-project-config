@@ -1,23 +1,23 @@
 npx npm-add-script \
   -k "lint" \
   -v "run-lint" \
-  --force
+  -f
 npx npm-add-script \
   -k "build" \
   -v "run-build" \
-  --force
+  -f
 npx npm-add-script \
   -k "build:dev" \
   -v "run-build-dev" \
-  --force
-npx npm-add-script \
-  -k "test" \
-  -v "run-test" \
+  -f
 npx npm-add-script \
   -k "test:coverage" \
   -v "run-test-coverage" \
-  --force
+  -f
 npx npm-add-script \
   -k "test:coverage:lcovonly" \
   -v "run-test-lcov" \
-  --force
+  -f
+npx npm-add-script \
+  -k "test" \
+  -v "run-test" \
