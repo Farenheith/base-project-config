@@ -2,20 +2,25 @@
 
 'use strict';
 
-const args = process.argv;
 const fs = require('fs');
+let spliceIndex = 2;
 
-if (fs.existsSync('./test/.mocha.opts')) {
-    process.argv = [];
-} else {
-    process.argv = ['--opts', './node_modules/base-project-config/mocha.opts'];
+if (!fs.existsSync(`${process.env.PWD}/test/.mocha.opts`)) {
+    process.argv.splice(spliceIndex, 0, '--opts', './node_modules/base-project-config/mocha.opts');
+    spliceIndex += 2;
 }
-
-if (args && args.length > 0) {
-    args.forEach(x => process.argv.push(x));
+const mochaSetup = `${process.env.PWD}/test/.mocha.setup`;
+if (fs.existsSync(mochaSetup)) {
+    const setups = fs.readFileSync(mochaSetup).toString().split(/(\n|\r\n)/);
+    for (const setup of setups) {
+        if (!setup.match(/(#.+|^\n|^$)/)) {
+            console.log(`Adding setup ${setup}`);
+            process.argv.splice(spliceIndex, 0, setup);
+            spliceIndex++
+        }
+    }
 }
-process.push('./test/**/*.spec.ts',
-    '--recursive', './test/**/*.spec.ts');
-
-debug(`exec ${process.execPath} w/ args:`, process.argv);
-require('./node_modules/mocha').main();
+process.argv.push('--recursive', './test/**/*.spec.ts');
+console.log(__dirname);
+console.log(`exec mocha w/ args:`, process.argv.slice(2));
+require('../../mocha/lib/cli').main();
