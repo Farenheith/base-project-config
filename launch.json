@@ -5,26 +5,23 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
+			"type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/dist/index.js",
-            "preLaunchTask": "tsc: build - tsconfig.json",
-            "outFiles": [
-                "${workspaceFolder}/dist/**/*.js"
-            ],
-            "outputCapture": "std"
-        },
+            "name": "Launch program",
+			"cwd": "${workspaceRoot}",
+			"runtimeArgs": ["-r", "ts-node/register"],
+			"args": [
+                "${workspaceRoot}/src/index.ts"
+            ]
+		},
         {
             "type": "node",
             "request": "launch",
             "name": "Mocha Tests",
-            "cwd": "${workspaceFolder}",
-            "runtimeExecutable": "npx",
-            "port": 9865,
+            "cwd": "${workspaceRoot}",
             "args": [
-                "--node-arg=--inspect-brk=9865",
-                "run-test"
+                "${workspaceRoot}/node_modules/.bin/run-test",
+                "--timeout", "999999",
             ],
             "outputCapture": "std"
         }
