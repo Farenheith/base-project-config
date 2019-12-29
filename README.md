@@ -82,10 +82,5 @@ npx add-scripts
 The test script runs mocha with a default mocha.opts, where all test/**/*.spec.ts in your project will be ran. Also, before all tests, this script runs a default setup where sinon.restore() is setted after each test case, so you don't have to do it by yourself.
 It is recommended, so, to not use sinon.sandbox(), as no test will ran in parallel and mocks with sinon.stub() and similars will be resetted after each test.
 
-Additionaly to test script, if you want to add some setup file before your tests, just change the script specifying it by parameters, like this:
-
-```json
-"test": "run-test my-setup-test.ts",
-```
-
+Additionaly to test script, if you want to add some setup file before your tests, just add at the test folder any file that ends with **setup.spec.ts** and that's it:
 This is useful if you want to use a lib, like sinon-chai, and want to setup it to all your test just in one place.

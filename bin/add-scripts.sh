@@ -21,3 +21,4 @@ npx npm-add-script \
 npx npm-add-script \
   -k "test" \
   -v "run-test" \
+  -f

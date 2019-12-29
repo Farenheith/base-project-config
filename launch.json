@@ -19,7 +19,14 @@
             "type": "node",
             "request": "launch",
             "name": "Mocha Tests",
-            "program": "${workspaceFolder}/node_modules/.bin/run-test-debug"
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "npx",
+            "port": 9865,
+            "args": [
+                "--node-arg=--inspect-brk=9865",
+                "run-test"
+            ],
+            "outputCapture": "std"
         }
     ]
 }
