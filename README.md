@@ -5,13 +5,13 @@ A project with basic configuration for reusing in another ones.
 ## How it works
 
 All common needed packages are loaded with this project by dependency, and there is pre-configured npm-scripts so you don't need to write it all by yourself.
-This is ideal for project with this characteristics:
+This is ideal for project with these characteristics:
 
-* using typescript language;
-* using mocha, sinon, chai triad;
-* using editorconfig extensions for vscode;
-* using nyc for coverage;
-* using tslint to ensure sintax;
+* Using typescript language;
+* Using mocha, sinon, chai triad;
+* Using editorconfig extensions for vscode;
+* Using nyc for coverage;
+* Using tslint to ensure sintax;
 
 Look that, if all of this is a must have for you, installing base-project-config will put all this packages automatically in your project with a default recommended configuration, making the creation of a new project much easier.
 
@@ -25,17 +25,17 @@ npm install --save-dev base-project-config
 
 For default configuration, first, you need to run *npx setup-project*, so all the basic files and directories are prepared.
 So, the rules are:
-    * source code must be in **src** folder;
-    * unit tests must be in **test** folder;
-    * 95% coverage is the minimum expected;
+* Source code must be in **src** folder;
+* Unit tests must be in **test** folder;
+* 95% coverage is the minimum expected;
 
 There is also tslint and tsconfig setup that you can check it out in those files that your project will be enforced to follow, but any configuration you must let different you can, just following the correspondent instructions bellow.
 
 ## How to setup project
 
 This command will:
-* add all scripts supported by this package to your package.json
-* create required configuration files
+* Add all scripts supported by this package to your package.json
+* Create required configuration files
 
 ```batch
 npx setup-project
@@ -43,20 +43,20 @@ npx setup-project
 ## How to just create required the config files?
 
 This command will:
-* create .editorconfig
-* create tslint.json
-* create test folder if it doesn't exist;
-* create test folder if it doesn't exist;
-* create test/tslint.json
+* Create .editorconfig
+* Create tslint.json
+* Create test folder if it doesn't exist;
+* Create src folder if it doesn't exist;
+* Create test/tslint.json
 
 ## How to create all the config files?
 
 You don't need to do it, as all the default config files can be getted from the package by the npm-scripts, but if you want to customize something, this command will:
-* create all the required config files
-* create tsconfig.json
-* create tsconfig.test.json
-* create tsconfig.test.json
-* create .nycrc.json
+* Create all the required config files
+* Create tsconfig.json
+* Create tsconfig.test.json
+* Create tsconfig.test.json
+* Create .nycrc.json
 
 ```batch
 npx create-configs
@@ -65,12 +65,12 @@ npx create-configs
 ## How to just create add all scripts?
 
 This command will:
-* add lint script, that runs tslint against your project;
-* add build:dev script, that just build your project without additional validation;
-* add build script, that runs lint and build:dev;
-* add test script, that runs mocha against your project;
-* add test:coverage script, that runs nyc and mocha against your project;
-* add test:coverage:lcovonly script, that runs lint, nyc generating only lcov report and mocha agains your project (useful for pipelines);
+* Add lint script, that runs tslint against your project;
+* Add build:dev script, that just build your project without additional validation;
+* Add build script, that runs lint and build:dev;
+* Add test script, that runs mocha against your project;
+* Add test:coverage script, that runs nyc and mocha against your project;
+* Add test:coverage:lcovonly script, that runs lint, nyc generating only lcov report and mocha agains your project (useful for pipelines);
 
 ```batch
 npx add-scripts
