@@ -13,7 +13,6 @@ npx npm-add-script \
 npx npm-add-script \
   -k "test" \
   -v "run-test" \
-  --force
 npx npm-add-script \
   -k "test:coverage" \
   -v "run-test-coverage" \
