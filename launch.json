@@ -19,8 +19,7 @@
             "type": "node",
             "request": "launch",
             "name": "Mocha Tests",
-            "program": "${workspaceFolder}/node_modules/.bin/run-test-debug",
-            "internalConsoleOptions": "openOnSessionStart"
+            "program": "${workspaceFolder}/node_modules/.bin/run-test-debug"s
         }
     ]
 }
