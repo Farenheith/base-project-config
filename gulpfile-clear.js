@@ -5,5 +5,7 @@ const del = require('del');
 gulp.task('default', function () {
   return del([
     `${baseDir}/build/`
-  ]);
+  ], {
+		force: true,
+	});
 });
