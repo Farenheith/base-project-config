@@ -1,23 +1,24 @@
 const fs = require('fs');
+const baseDir = __dirname.substring(0, __dirname.lastIndexOf('/node_modules/'));
 
-fs.writeFileSync('./tslint.json', `{
+fs.writeFileSync(`${baseDir}/tslint.json`, `{
 	"extends": "base-project-config/tslint.json"
 }`);
 
-['./test', './src', './.vscode'].forEach(x => {
+[`${baseDir}/test`, `${baseDir}/src`, `${baseDir}/.vscode`].forEach(x => {
 	if (!fs.existsSync(x)) {
 		fs.mkdirSync(x);
 	}
 });
 
 if (!fs.existsSync('src/index.ts')) {
-	fs.writeFileSync('./src/index.ts', '');
+	fs.writeFileSync(`${baseDir}/src/index.ts`, '');
 }
 
-fs.writeFileSync('./test/tslint.json', `{
+fs.writeFileSync(`${baseDir}/test/tslint.json`, `{
 	"extends": "base-project-config/tslint.test.json"
 }`);
 
-fs.copyFileSync('./node_modules/base-project-config/.editorconfig', './.editorconfig');
-fs.copyFileSync('./node_modules/base-project-config/.travis.yml', './.travis.yml');
-fs.copyFileSync('./node_modules/base-project-config/launch.json', './.vscode/launch.json');
+fs.copyFileSync(`${baseDir}/node_modules/base-project-config/.editorconfig`, `${baseDir}/.editorconfig`);
+fs.copyFileSync(`${baseDir}/node_modules/base-project-config/.travis.yml`, `${baseDir}/.travis.yml`);
+fs.copyFileSync(`${baseDir}/node_modules/base-project-config/launch.json`, `${baseDir}/.vscode/launch.json`);
