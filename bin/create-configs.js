@@ -18,6 +18,6 @@ fs.writeFileSync('./test/tslint.json', `{
 	"extends": "base-project-config/tslint.test.json"
 }`);
 
-fs.copyFileSync('./node_modules/base-project-config/.editorconfig ', './.editorconfig');
+fs.copyFileSync('./node_modules/base-project-config/.editorconfig', './.editorconfig');
 fs.copyFileSync('./node_modules/base-project-config/.travis.yml', './.travis.yml');
 fs.copyFileSync('./node_modules/base-project-config/launch.json', './.vscode/launch.json');
