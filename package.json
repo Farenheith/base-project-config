@@ -22,7 +22,7 @@
     "run-build": "bin/run-build.js",
     "add-scripts": "bin/add-scripts.sh",
     "create-configs": "bin/create-configs.js",
-    "setup-project": "bin/setup-project.js"
+    "setup-project": "bin/setup-project.sh"
   },
   "author": "Farenheith",
   "license": "MIT",
