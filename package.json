@@ -20,7 +20,7 @@
     "run-test-json": "bin/run-test-json.js",
 		"run-pre-build": "bin/run-pre-build.sh",
     "run-build": "bin/run-build.js",
-    "add-scripts": "bin/add-scripts.js",
+    "add-scripts": "bin/add-scripts.sh",
     "create-configs": "bin/create-configs.js",
     "setup-project": "bin/setup-project.js"
   },
