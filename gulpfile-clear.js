@@ -1,9 +1,9 @@
-__dirname = require('./bin/get-base-dir');
-var gulp = require('gulp');
-var del = require('del');
+const baseDir = require('./get-base-dir');
+const gulp = require('gulp');
+const del = require('del');
 
 gulp.task('default', function () {
   return del([
-    'build/'
+    `${baseDir}/build/`
   ]);
 });
