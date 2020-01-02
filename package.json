@@ -18,11 +18,11 @@
     "run-test-coverage": "bin/run-test-coverage.js",
     "run-test-lcov": "bin/run-test-lcov.js",
     "run-test-json": "bin/run-test-json.js",
-		"run-pre-build": "bin/run-pre-build.sh",
+		"run-pre-build": "bin/run-pre-build.js",
     "run-build": "bin/run-build.js",
-    "add-scripts": "bin/add-scripts.sh",
+    "add-scripts": "bin/add-scripts.js",
     "create-configs": "bin/create-configs.js",
-    "setup-project": "bin/setup-project.sh"
+    "setup-project": "bin/setup-project.js"
   },
   "author": "Farenheith",
   "license": "MIT",
