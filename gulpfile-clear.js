@@ -1,10 +1,8 @@
 var gulp = require('gulp');
 var del = require('del');
 
-gulp.task('clean:output', function () {
+gulp.task('default', function () {
   return del([
-    'js/'
+    'build/'
   ]);
 });
-
-gulp.task('default', ['clean:output']);
