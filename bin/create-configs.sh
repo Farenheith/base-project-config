@@ -11,4 +11,5 @@ printf "{
 }
 " > ./test/tslint.json
 cp -f ./node_modules/base-project-config/.editorconfig ./.editorconfig
+cp -f ./node_modules/base-project-config/.travis.yml ./.travis.yml
 cp -f ./node_modules/base-project-config/launch.json ./.vscode/launch.json

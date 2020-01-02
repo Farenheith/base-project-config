@@ -19,6 +19,10 @@ npx npm-add-script \
   -v "run-test-lcov" \
   -f
 npx npm-add-script \
+  -k "test:coverage:json" \
+  -v "run-test-json" \
+  -f
+npx npm-add-script \
   -k "test" \
   -v "run-test" \
   -f
