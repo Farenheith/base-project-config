@@ -1,0 +1,14 @@
+const fs = require('fs');
+
+const baseDir = __dirname.substring(0, __dirname.lastIndexOf('/node_modules/'));
+if (![
+		`${baseDir}/.nycrc.json`, `${baseDir}/.nycrc`, `${baseDir}/.nycrc.yaml`,
+		`${baseDir}/.nycrc.yml`, `${baseDir}/nyc.config.js`
+	].some(x => fs.existsSync(x))
+) {
+	process.argv.push('-p', `${baseDir}/node_modules/base-project-config/.nycrc.json`);
+}
+
+process.argv.push('npm', 'test');
+
+require(`${baseDir}/node_modules/nyc/bin/nyc`);

@@ -16,4 +16,4 @@ for (const setup of setups) {
 }
 process.argv.push('--recursive', './test/**/*.spec.ts');
 console.log(`exec mocha w/ args:`, process.argv.slice(2));
-require(`${baseDir}/node_modules/mocha/lib/cli`).main();
+require(`${baseDir}/node_modules/mocha/bin/_mocha`);
