@@ -1,4 +1,4 @@
-const baseDir = require('./get-base-dir');
+const baseDir = require('./bin/get-base-dir');
 const gulp = require('gulp');
 const del = require('del');
 
