@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const baseDir = __dirname.substring(0, __dirname.lastIndexOf('/node_modules/'));
+const baseDir = require('./get-base-dir');
 if (![
 		`${baseDir}/.nycrc.json`, `${baseDir}/.nycrc`, `${baseDir}/.nycrc.yaml`,
 		`${baseDir}/.nycrc.yml`, `${baseDir}/nyc.config.js`

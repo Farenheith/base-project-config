@@ -1,16 +1,17 @@
-require('./create-configs');
+require(`${baseDir}/create-configs`);
 const fs = require('fs');
+const baseDir = require(`${baseDir}/get-base-dir`);
 
-fs.writeFileSync('./.nycrc.json', `{
+fs.writeFileSync(`${baseDir}/.nycrc.json`, `{
 	"extends": "base-project-config/.nycrc.json"
 }`);
 
-fs.writeFileSync('./tsconfig.json', `{
+fs.writeFileSync(`${baseDir}/tsconfig.json`, `{
 	"extends": "base-project-config/tsconfig.json"
 }`);
 
-fs.writeFileSync('./tsconfig.test.json', `{
+fs.writeFileSync(`${baseDir}/tsconfig.test.json`, `{
 	"extends": "base-project-config/tsconfig.test.json"
 }`);
 
-fs.copyFileSync('./node_modules/base-project-config/mocha.opts ', './test/mocha.opts');
+fs.copyFileSync(`${baseDir}/node_modules/base-project-config/mocha.opts `, `${baseDir}/test/mocha.opts`);

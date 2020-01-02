@@ -1,9 +1,5 @@
-#!/usr/bin/env node
-
-'use strict';
-
 const fs = require('fs');
-const baseDir = __dirname.substring(0, __dirname.lastIndexOf('/node_modules/'));
+const baseDir = require('./get-base-dir');
 if (!fs.existsSync(`${baseDir}/node_modules/test/.mocha.opts`)) {
     process.argv.push('--opts', './node_modules/base-project-config/mocha.opts');
 }

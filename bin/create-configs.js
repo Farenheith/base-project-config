@@ -1,5 +1,5 @@
 const fs = require('fs');
-const baseDir = __dirname.substring(0, __dirname.lastIndexOf('/node_modules/'));
+const baseDir = require('./get-base-dir');
 
 fs.writeFileSync(`${baseDir}/tslint.json`, `{
 	"extends": "base-project-config/tslint.json"

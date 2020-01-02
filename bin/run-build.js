@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const baseDir = __dirname.substring(0, __dirname.lastIndexOf('/node_modules/'));
+const baseDir = require('./get-base-dir');
 if (!fs.existsSync(`${baseDir}/tsconfig.json`)) {
 	process.argv.push('-p', `${baseDir}/node_modules/base-project-config/tsconfig.json`);
 }
