@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var npmAddScript = require('npm-add-script');
 
 npmAddScript({ key: 'lint', value: 'run-lint'})

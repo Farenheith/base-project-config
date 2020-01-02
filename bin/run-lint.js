@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const fs = require('fs');
 
 const baseDir = require('./get-base-dir');

@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 require(`${baseDir}/create-configs`);
 const fs = require('fs');
 const baseDir = require(`${baseDir}/get-base-dir`);
