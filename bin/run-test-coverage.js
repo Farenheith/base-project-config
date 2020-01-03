@@ -7,7 +7,7 @@ if (![
 		`${baseDir}/.nycrc.yml`, `${baseDir}/nyc.config.js`
 	].some(x => fs.existsSync(x))
 ) {
-	process.argv.push('-p', `${baseDir}/node_modules/base-project-config/.nycrc.json`);
+	process.argv.push('--nycrc-path', `${baseDir}/node_modules/base-project-config/.nycrc.json`);
 }
 
 process.argv.push('npm', 'test');
