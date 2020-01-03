@@ -22,4 +22,5 @@ fs.writeFileSync(`${baseDir}/test/tslint.json`, `{
 
 fs.copyFileSync(`${baseDir}/node_modules/base-project-config/.editorconfig`, `${baseDir}/.editorconfig`);
 fs.copyFileSync(`${baseDir}/node_modules/base-project-config/.travis.yml`, `${baseDir}/.travis.yml`);
+fs.copyFileSync(`${baseDir}/node_modules/base-project-config/.codecov.yml`, `${baseDir}/.codecov.yml`);
 fs.copyFileSync(`${baseDir}/node_modules/base-project-config/launch.json`, `${baseDir}/.vscode/launch.json`);
