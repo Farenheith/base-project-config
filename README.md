@@ -45,11 +45,15 @@ npx setup-project
 ## How to just create the required config files?
 
 This command will:
-* Create .editorconfig
-* Create tslint.json
+* Create .editorconfig;
+* Create tslint.json;
 * Create test folder if it doesn't exist;
 * Create src folder if it doesn't exist;
-* Create test/tslint.json
+* Create test/tslint.json;
+* Create .travis.yml, ready to integrate with codecov.io;
+* Create .codecov.yml
+
+Look that, if you'll upload your project as a public repo, you just need to give permission to travis and codecov and all integration will work and you can put some badges at your project :)
 
 ## How to create all config files?
 
@@ -68,11 +72,10 @@ npx create-configs
 
 This command will:
 * Add lint script, that runs tslint against your project;
-* Add build:dev script, that just build your project without additional validation;
-* Add build script, that runs lint and build:dev;
+* Add build script, that builds your project;
 * Add test script, that runs mocha against your project;
 * Add test:coverage script, that runs nyc and mocha against your project;
-* Add test:coverage:lcovonly script, that runs lint, nyc generating only lcov report and mocha against your project (useful for pipelines);
+* Add test:coverage:lcovonly script, that runs nyc generating only lcov report and mocha against your project, without trhowing error for lack of coverage (useful for pipelines);
 
 ```batch
 npx add-scripts
