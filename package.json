@@ -1,6 +1,6 @@
 {
   "name": "base-project-config",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "A project with basic configuration for reusing in another ones",
   "keywords": [
     "new project",
