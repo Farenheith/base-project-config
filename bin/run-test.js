@@ -1,9 +1,6 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const baseDir = require('./get-base-dir');
-if (!fs.existsSync(`${baseDir}/node_modules/test/.mocha.opts`)) {
-    process.argv.push('--opts', './node_modules/base-project-config/mocha.opts');
-}
 const mochaSetup = `${baseDir}/test`;
 const setups = fs.readdirSync(mochaSetup)
 for (const setup of setups) {

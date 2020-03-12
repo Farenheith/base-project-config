@@ -20,6 +20,10 @@ fs.writeFileSync(`${baseDir}/test/tslint.json`, `{
 	"extends": "base-project-config/tslint.test.json"
 }`);
 
+fs.writeFileSync(`${baseDir}/.mocharc.json`, `{
+	"extends": "base-project-config/mocharc.json"
+}`);
+
 fs.copyFileSync(`${baseDir}/node_modules/base-project-config/.editorconfig`, `${baseDir}/.editorconfig`);
 fs.copyFileSync(`${baseDir}/node_modules/base-project-config/.travis.yml`, `${baseDir}/.travis.yml`);
 fs.copyFileSync(`${baseDir}/node_modules/base-project-config/.codecov.yml`, `${baseDir}/.codecov.yml`);
