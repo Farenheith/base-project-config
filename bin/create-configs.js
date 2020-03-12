@@ -21,7 +21,7 @@ fs.writeFileSync(`${baseDir}/test/tslint.json`, `{
 }`);
 
 fs.writeFileSync(`${baseDir}/.mocharc.json`, `{
-	"extends": "base-project-config/mocharc.json"
+	"extends": "node_modules/base-project-config/mocharc.json"
 }`);
 
 fs.copyFileSync(`${baseDir}/node_modules/base-project-config/.editorconfig`, `${baseDir}/.editorconfig`);
