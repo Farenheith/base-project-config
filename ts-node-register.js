@@ -1,5 +1,5 @@
 const fs = require('fs')
-const baseDir = __dirname.substring(0, __dirname.lastIndexOf('/node_modules/'));
+const baseDir = require('./bin/get-base-dir');
 const tsConfig = `${baseDir}/tsconfig.test.json`;
 const project = fs.existsSync(tsConfig) ?
 	tsConfig :
