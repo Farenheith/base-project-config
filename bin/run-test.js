@@ -3,7 +3,7 @@ const fs = require('fs');
 const baseDir = require('./get-base-dir');
 const mochaSetup = `${baseDir}/test`;
 const setups = fs.readdirSync(mochaSetup)
-process.argv.push(`${baseDir}/node_modules/setup.spec.js`);
+process.argv.push(`${baseDir}/node_modules/base-project-config/setup.spec.js`);
 for (const setup of setups) {
     if (setup.match(/.*setup\.spec\.ts/)) {
         process.argv.push(`test/${setup}`);
