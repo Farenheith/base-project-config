@@ -41,7 +41,7 @@
     "ts-node": "^8.6.2",
     "tslint": "^6.1.0",
     "typescript": "^3.8.3",
-    "snyk": "^1.685.0"
+    "snyk": "^1.996.0"
   },
   "devDependencies": {},
   "scripts": {
